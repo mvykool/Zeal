@@ -5,10 +5,10 @@ import { users } from '../../utils/users'
 
 const ScienceCard = () => {
   return (
-    <div className='pb-8 sci-card w-full my-5 rounded-lg shadow-2xl relative overflow-hidden'>
+    <div className='pb-8 sci-card w-full my-5 rounded-lg shadow-2xl relative overflow-hidden px-6'>
 
     {/**title and icon*/}
-     <div  className='flex item-center justify-between px-6 pt-4'>
+     <div  className='flex item-center justify-between pt-4'>
         <h1 className='text-xl font-bold'>Science</h1>
 
         <TbAtomOff className='h-8 w-8'/>
@@ -16,7 +16,7 @@ const ScienceCard = () => {
 
      {/**progress bar */}
 
-     <div className='flex justify-between px-6 pt-5'>
+     <div className='flex justify-between pt-5'>
         <p className='text-sm text-gray-800'>Progress:</p>
         <p className='text-sm text-gray-800'>42%</p>
      </div>
@@ -31,14 +31,14 @@ const ScienceCard = () => {
 
            {/**hours */}
 
-           <div className='ml-6 mt-2'>
+           <div className=' mt-2'>
               <h3 className='text-gray-800'>86 Hours</h3>
            </div>
 
            {/**users */}
 
 
-        <div className='flex mr-24'>
+        <div className='flex mr-20'>
         <div>
           <div className='ml-16 h-8 w-8 flex justify-center text-sm items-center p-5 z-10 absolute rounded-full bg-gray-200'>+10</div>
         </div>

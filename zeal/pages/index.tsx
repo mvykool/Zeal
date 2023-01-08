@@ -38,13 +38,21 @@ export default function Home() {
         <div>
           <Banner/>
         </div>
+     
 
-        {/** courses mobile */}
+         {/** courses mobile */}
+      <div className='mt-3 mx-6 flex justify-between'>
+        <h1 className='text-xl font-extrabold'>Courses</h1>
 
-        <div className='md:hidden'>
+        <p>View all</p>
+    </div>
+
+      <section className='flex overflow-x-auto'> 
+
+      <div className='md:hidden'>
           <CourseMobile/>
         </div>
-    
+      </section>
       </main>
     </>
   )
