@@ -17,13 +17,7 @@ export default function Home() {
 
   // set the router for the redirect
 
-  const router = useRouter()
-
-  if(!user){
-    router.push('/login')
-  }
-
-
+  
   return (
     <>
       <Head>

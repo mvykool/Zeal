@@ -14,6 +14,7 @@ const Banner = () => {
           width={200}
           alt='books banner'
           className='h-36 w-36'
+          priority
           />
 
           <div>

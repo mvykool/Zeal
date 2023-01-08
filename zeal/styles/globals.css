@@ -6,6 +6,7 @@
 :root{
     --bg-dark: #001220;
     --bg-wrapper: rgba(0,0,0, 0.7);
+    --bg-event: rgba(0,0,0, 0.5);
 }
 
 
@@ -52,4 +53,8 @@
 }
 
 
-
+.event{
+    background-image: url('/event.jpg');
+    background-size: cover;
+    background-position: center;
+}
