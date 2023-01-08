@@ -5,6 +5,7 @@ import MobileNavbar from '../components/MobileNavbar'
 import Banner from '../components/Banner'
 import CourseMobile from '../components/CourseMobile'
 import Progress from '../components/Progress'
+import { useRouter } from 'next/router'
 
 
 export default function Home() {
@@ -15,6 +16,13 @@ export default function Home() {
 
 
   // set the router for the redirect
+
+  const router = useRouter()
+
+  if(!user){
+    router.push('/login')
+  }
+
 
   return (
     <>

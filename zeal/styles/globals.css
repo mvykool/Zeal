@@ -5,6 +5,12 @@
 
 :root{
     --bg-dark: #001220;
+    --bg-wrapper: rgba(0,0,0, 0.7);
+}
+
+
+.login-mobile{
+    background-image: url('/bg-mobile.svg');
 }
 
 

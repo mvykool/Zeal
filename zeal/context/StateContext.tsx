@@ -7,11 +7,13 @@ export const StateContext = ({ children }: { children: React.ReactNode }) => {
 
     const [user, setUser] = useState(false);
 
+    const [openMenu, setOpenMenu] = useState(false);
+
     
 
     return (
         <div>
-            <Context.Provider value={{ user, setUser }}>
+            <Context.Provider value={{ user, setUser, setOpenMenu, openMenu }}>
                 {children}
             </Context.Provider>
         </div>

@@ -21,12 +21,13 @@ const Login = () => {
     
 
   return (
-    <div className='relative pb-[95vh]'>
+    <>
+    <div className='w-screen pb-[95vh] '>
 
     {/** bgs for desktop and mobile */}
     <Image src={'/blob-scene-haikei.svg'} width={1000} height={1000} alt='bg' className='w-screen h-screen object-cover hidden md:block' />   
 
-    <Image src={'/bg-mobile.svg'} width={1000} height={1000} alt='bg' className='w-screen h-[95vh] object-cover absolute z-10 md:hidden' />   
+    <Image src={'/bg-mobile.svg'} priority width={900} height={500} alt='bg' className=' w-screen h-[95vh] object-cover absolute z-10 md:hidden' />   
 
        <main className='flex justify-center py-20 absolute z-30 w-screen'>
          {/**title & images */}
@@ -52,6 +53,7 @@ const Login = () => {
     </div>
        </main>
     </div>
+    </>
   )
 }
 

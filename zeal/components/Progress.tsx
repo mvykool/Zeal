@@ -52,7 +52,7 @@ const Progress = () => {
     <div className='mx-6 mt-10 mb-20'>
        <h1 className='text-xl font-extrabold'>Progress</h1>
 
-      <div className='bg-white h-[25vh] px-4 flex items-center shadow-2xl rounded-lg'>
+      <div className='bg-white h-[30vh] px-4 flex items-center shadow-2xl rounded-lg'>
       <Line options={options} data={data} />
       </div>
     </div>
