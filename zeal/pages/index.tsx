@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import { useStateContext } from '../context/StateContext'
 import MobileNavbar from '../components/MobileNavbar'
 import Banner from '../components/Banner'
+import CourseMobile from '../components/CourseMobile'
 
 
 export default function Home() {
@@ -36,6 +37,12 @@ export default function Home() {
 
         <div>
           <Banner/>
+        </div>
+
+        {/** courses mobile */}
+
+        <div className='md:hidden'>
+          <CourseMobile/>
         </div>
     
       </main>
