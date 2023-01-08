@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import { useStateContext } from '../context/StateContext'
 import MobileNavbar from '../components/MobileNavbar'
+import Banner from '../components/Banner'
 
 
 export default function Home() {
@@ -29,6 +30,12 @@ export default function Home() {
         {/**mobile navbar */}
         <div className='md:hidden'>
           <MobileNavbar/>
+        </div>
+
+        {/**banner */}
+
+        <div>
+          <Banner/>
         </div>
     
       </main>

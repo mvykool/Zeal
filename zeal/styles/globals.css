@@ -6,3 +6,11 @@
 :root{
     --bg-dark: #001220;
 }
+
+
+/*banner img*/
+
+.banner{
+    background-image: url('/banner.svg');
+    background-size: cover;
+}
