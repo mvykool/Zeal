@@ -1,30 +1,27 @@
 import React from 'react'
-import {BiPaint} from 'react-icons/bi'
+import {TbMath} from 'react-icons/tb'
 import { users } from '../../utils/users'
 
-const UxCard = () => {
-
-
-
+const MathCard = () => {
   return (
-    <div className='pb-8 ux-card w-full my-5 rounded-lg shadow-2xl relative overflow-hidden'>
+    <div className='pb-8 math-card w-full my-5 rounded-lg shadow-2xl relative overflow-hidden'>
 
       {/**title and icon*/}
        <div  className='flex item-center justify-between px-6 pt-4'>
-          <h1 className='text-xl font-bold'>UX/UI Design</h1>
+          <h1 className='text-xl font-bold'>Mathematics</h1>
 
-          <BiPaint className='h-8 w-8'/>
+          <TbMath className='h-8 w-8'/>
        </div>
 
        {/**progress bar */}
 
        <div className='flex justify-between px-6 pt-5'>
           <p className='text-sm text-gray-800'>Progress:</p>
-          <p className='text-sm text-gray-800'>55%</p>
+          <p className='text-sm text-gray-800'>75%</p>
        </div>
 
        <div className='h-1.5 rounded-lg w-[78vw] mx-auto bg-gray-200 flex mt-3'>
-         <span className='w-[39vw] bg-black rounded-lg'></span>
+         <span className='w-[55vw] bg-black rounded-lg'></span>
        </div>
 
        {/**hours and users*/}
@@ -34,7 +31,7 @@ const UxCard = () => {
              {/**hours */}
 
              <div className='ml-6 mt-2'>
-                <h3 className='text-gray-800'>48 Hours</h3>
+                <h3 className='text-gray-800'>120 Hours</h3>
              </div>
 
              {/**users */}
@@ -47,7 +44,7 @@ const UxCard = () => {
 
           {/**users */}
            <div className='flex space-x-4'>
-            {users.slice(0,3).map((user:any) => {
+            {users.slice(1,4).map((user:any) => {
               return(
                 <div key={user.name}>
                   <img 
@@ -68,4 +65,4 @@ const UxCard = () => {
   )
 }
 
-export default UxCard
+export default MathCard
