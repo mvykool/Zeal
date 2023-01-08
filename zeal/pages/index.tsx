@@ -2,22 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import { useStateContext } from '../context/StateContext'
-import { useRouter } from 'next/router'
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
   //bring the user to check if it's true, otherwise redirect to the login screen
 
-  const {user} = useStateContext()
+  const {user, setUser} = useStateContext()
 
 
   // set the router for the redirect
-
-  const router = useRouter()
-  if(!user) router.push({ pathname: '/login' }) 
 
   return (
     <>
