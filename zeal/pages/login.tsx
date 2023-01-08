@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import React, { useEffect} from 'react'
 import { FaBook, FaPaintBrush, FaAtom, FaPencilAlt, FaRulerCombined } from 'react-icons/fa'
 import {HiComputerDesktop} from 'react-icons/hi2'
@@ -6,7 +7,7 @@ import { useStateContext } from '../context/StateContext'
 const Login = () => {
 
 
-    const {setUser} = useStateContext()
+    const {setUser, user} = useStateContext()
 
     //login
 
@@ -14,11 +15,10 @@ const Login = () => {
         setUser(true)
     }
 
-    useEffect(() => {
-      
-        setUser(true)
-    
-    }, [ setUser()])
+
+   
+  const router = useRouter()
+  if(user) router.push({ pathname: '/' })  
     
 
   return (
