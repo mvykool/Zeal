@@ -9,7 +9,7 @@ const CourseMobile = () => {
    <>
         {/**cards of the courses */}
         
-      <div className='cards space-x-3 mx-5'>
+      <div className='cards space-x-3 px-5 pb-8'>
       <UxCard/>
       <BusinessCard/>
       <MathCard/>
