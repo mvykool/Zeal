@@ -21,6 +21,7 @@
 .banner{
     background-image: url('/banner.svg');
     background-size: cover;
+    background-position: center;
 }
 
 /*cards*/
@@ -62,15 +63,17 @@
 
 
 .bg-app{
-    background: radial-gradient(80.99% 100% at 50% 0%, #00FF0A 0%, #36008E 100%), radial-gradient(50% 123.47% at 50% 50%, #EFE7C8 0%, #36008E 100%), linear-gradient(301.28deg, #FF006B 0%, #48DD9E 100%), linear-gradient(294.84deg, #5A60E4 0%, #D30000 100%), linear-gradient(52.29deg, #000000 0%, #00FF85 100%), radial-gradient(100% 138.69% at 100% 0%, #0007A5 0%, #FF7A00 100%), radial-gradient(70.41% 100% at 50% 0%, #D5B300 0%, #2200AA 100%);
-background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    
+      
 }
 
 .bg-app-glass{
-    background: rgba( 255, 255, 255, 0.2 );
+    background: rgba(206, 206, 206, 0.2);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.4 );
 }

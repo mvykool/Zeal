@@ -49,10 +49,10 @@ import {
 
 const Progress = () => {
   return (
-    <div className='mx-6 mt-10 mb-10'>
-       <h1 className='text-xl font-extrabold'>Progress</h1>
+    <div className='mx-6 md:mx-5 mt-10 md:mt-5 mb-10 md:mb-1'>
+       <h1 className='text-xl md:text-base font-extrabold'>Progress</h1>
 
-      <div className='bg-white h-[30vh] px-4 flex items-center shadow-2xl rounded-lg'>
+      <div className='bg-white md:h-[20vh] md:w-[20vw] h-[30vh] px-4 flex items-center shadow-2xl md:mt-2 md:shadow-lg rounded-lg hover:scale-105 duration-200 cursor-pointer'>
       <Line options={options} data={data} />
       </div>
     </div>
