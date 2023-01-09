@@ -46,10 +46,10 @@ const Footer = () => {
         {/**newsletter */}
 
         <div>
-          <p className='text-white text-sm mt-10'>Follow our newsletter!</p>
+          <p className='text-white text-sm mt-10'>Subscribe to newsletter!</p>
 
           <form className='flex justify-center items-center py-1 mt-2'>
-         <input type="text" placeholder='Search..' className=' border-2 border-blue-800 bg-gray-100 py-1 px-2 w-[20vw] rounded-l-md' />
+         <input type="text" placeholder='Email..' className=' border-2 border-blue-800 bg-gray-100 py-1 px-2 w-[20vw] rounded-l-md' />
          <button className='bg-blue-800 py-2 px-3 rounded-r-md border-2 border-blue-800 ' type='button'><RiSearch2Line className='text-white text-base '/></button>
        </form>
         </div>

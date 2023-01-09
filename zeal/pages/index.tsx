@@ -7,6 +7,10 @@ import CourseMobile from '../components/CourseMobile'
 import Progress from '../components/Progress'
 import { useRouter } from 'next/router'
 import Prime from '../components/Prime'
+import Sidebar from '../components/Sidebar';
+import Header from '../components/Header'
+import Desktopmenu from '../components/Desktopmenu';
+import Dashboard from '../components/Dashboard'
 
 
 export default function Home() {
@@ -29,7 +33,8 @@ export default function Home() {
       </Head>
 
       {/**grid layout */}
-      <main className='grid grid-cols-1 md:grid-cols-4 bg-gray-50'>
+      <main className='grid grid-cols-1  bg-gray-50'>
+    
         
         {/**mobile navbar */}
         <div className='md:hidden'>
@@ -38,38 +43,76 @@ export default function Home() {
 
         {/**banner */}
 
-        <div>
+        <div className='md:hidden'>
           <Banner/>
         </div>
      
 
          {/** courses mobile */}
-      <div className='mt-3 mx-6 flex justify-between'>
+      <div className='md:hidden mt-3 mx-6 flex justify-between'>
         <h1 className='text-xl font-extrabold'>Courses</h1>
 
         <p>View all</p>
     </div>
 
-      <section className='flex overflow-x-auto'> 
+      <section className='flex overflow-x-auto md:hidden'> 
 
-      <div className='md:hidden'>
+      <div>
           <CourseMobile/>
         </div>
       </section>
       
       {/**progress */}
 
-      <div>
+      <div className='md:hidden'>
         <Progress/>
       </div>
 
       {/**promo plan */}
 
-      <div>
+      <div className='block md:hidden'>
         <Prime/>
       </div>
-
       </main>
+
+
+      {/**desktop ui */}
+
+
+    <main className='hidden md:flex justify-center items-center  h-screen bg-app'>
+        
+        {/**dashboard desktop */}
+
+       <section className='grid grid-cols-6 h-[95vh] w-[98vw] bg-app-glass p-5'>
+        {/**deskotp menu */}
+
+        <div className='hidden md:block col-span-1'>
+          <Desktopmenu/>
+        </div>
+ 
+        {/**white bg */}
+        <div className=' bg-gray-100 col-span-5 rounded-xl'>
+            <div className='grid grid-cols-6'>
+            <div className='hidden md:block col-span-4'>
+            <Header/>
+            <Dashboard/>
+          </div>
+
+
+        {/**side bar */}
+
+
+          <div className='hidden md:block col-span-2'>
+            <Sidebar/>
+          </div>
+            </div>
+        </div>
+                
+        </section> 
+       
+
+    </main>
+             
     </>
   )
 }
