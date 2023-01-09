@@ -40,7 +40,7 @@ const ScienceCard = () => {
 
         <div className='flex mr-20'>
         <div>
-          <div className='ml-16 h-8 w-8 flex justify-center text-sm items-center p-5 z-10 absolute rounded-full bg-gray-200'>+6</div>
+          <div className='ml-16 h-8 w-8 flex justify-center text-sm items-center p-5 z-10 absolute rounded-full bg-white'>+6</div>
         </div>
 
         {/**users */}

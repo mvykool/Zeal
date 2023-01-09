@@ -58,3 +58,8 @@
     background-size: cover;
     background-position: center;
 }
+
+
+.premium{
+    background: linear-gradient(to right, #434343, #000000);
+}

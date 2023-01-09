@@ -39,7 +39,7 @@ const MathCard = () => {
 
           <div className='flex mr-20'>
           <div>
-            <div className='ml-16 h-8 w-8 flex justify-center text-sm items-center p-5 z-10 absolute rounded-full bg-gray-200'>+24</div>
+            <div className='ml-16 h-8 w-8 flex justify-center text-sm items-center p-5 z-10 absolute rounded-full bg-gray-white'>+24</div>
           </div>
 
           {/**users */}
