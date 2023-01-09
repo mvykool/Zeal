@@ -41,7 +41,7 @@ const Login = () => {
          {/**text */}
          <div className='mt-28 flex justify-center'>
           
-            <button onClick={handleLogin} type='button' className='text-white bg-cyan-700 p-3 rounded-lg font-bold'>
+            <button onClick={handleLogin} type='button' className='text-white bg-gray-600 p-3 rounded-lg font-bold'>
                 Login as Demo
             </button>
             
