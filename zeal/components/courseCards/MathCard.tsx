@@ -4,7 +4,7 @@ import { users } from '../../utils/users'
 
 const MathCard = () => {
   return (
-    <div className='pb-8 math-card w-full my-5 rounded-lg shadow-2xl relative overflow-hidden px-6'>
+    <div className='pb-8 math-card w-full my-5 rounded-lg shadow-xl relative overflow-hidden px-6'>
 
       {/**title and icon*/}
        <div  className='flex item-center justify-between pt-4'>

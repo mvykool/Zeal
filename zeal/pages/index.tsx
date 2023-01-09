@@ -6,6 +6,7 @@ import Banner from '../components/Banner'
 import CourseMobile from '../components/CourseMobile'
 import Progress from '../components/Progress'
 import { useRouter } from 'next/router'
+import Prime from '../components/Prime'
 
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
       </Head>
 
       {/**grid layout */}
-      <main className='grid grid-cols-1 md:grid-cols-4'>
+      <main className='grid grid-cols-1 md:grid-cols-4 bg-gray-50'>
         
         {/**mobile navbar */}
         <div className='md:hidden'>
@@ -60,6 +61,12 @@ export default function Home() {
 
       <div>
         <Progress/>
+      </div>
+
+      {/**promo plan */}
+
+      <div>
+        <Prime/>
       </div>
 
       </main>
