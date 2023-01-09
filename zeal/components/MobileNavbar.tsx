@@ -50,7 +50,7 @@ if (typeof window !== "undefined") {
     {/**seach bar */}
 
      <div className='mt-20 ml-6'>
-        <h1 className='text-3xl font-extrabold'>Overview</h1>
+        <h1 className='text-3xl font-extrabold'>Dashboard</h1>
      </div>
 
        <form className='flex justify-center items-center py-3 mt-5'>

@@ -81,7 +81,8 @@ const MobileMenu = () => {
          </div>
 
  
-         <div className='event w-full h-40  shadow-2xl'>
+         <div className=' w-full h-40  shadow-2xl'>
+          <Image width={500} height={500} alt='event' src={'/event.jpg'} className='absolute z-[-1] h-40' />
              <div className='bg-[var(--bg-event)] w-full h-full '>
                 <div className='flex items-center justify-between mx-3 pt-3'>
                     <h1 className='text-white font-semibold pl-2'>18/01/2023</h1>
@@ -91,11 +92,11 @@ const MobileMenu = () => {
                     </div>
                 </div>
                <div className='flex items-center'>
-               <GoClock className='ml-5 mt-1 h-3 text-gray-400'/>
-               <p className='text-gray-400 mt-1'>17:00</p>
+               <GoClock className='ml-5 mt-1 h-3 text-gray-200'/>
+               <p className='text-gray-200 mt-1'>17:00</p>
                </div>
 
-               <h1 className='text-white mt-8 mb-4 ml-5 font-bold text-lg'>Business Lecture</h1>
+               <h1 className='text-white mt-5 mb-4 ml-5 font-bold text-lg'>Business Lecture</h1>
              </div>
          </div>
        

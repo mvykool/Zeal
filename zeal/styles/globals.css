@@ -53,14 +53,6 @@
     background-blend-mode: color-dodge, difference, lighten, color-dodge, normal;
 }
 
-
-.event{
-    background-image: url('/event.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-
 .premium{
     background: linear-gradient(to right, #434343, #000000);
 }
