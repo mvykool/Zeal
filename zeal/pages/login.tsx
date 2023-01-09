@@ -39,7 +39,7 @@ const Login = () => {
       </div>
 
          {/**text */}
-         <div className='mt-16 flex justify-center'>
+         <div className='mt-28 flex justify-center'>
           
             <button onClick={handleLogin} type='button' className='text-white bg-cyan-700 p-3 rounded-lg font-bold'>
                 Login as Demo
@@ -47,7 +47,7 @@ const Login = () => {
             
          </div>
       
-         <div className='mt-14 text-gray-300'>
+         <div className='mt-5 text-gray-300'>
            &copy;Zeal v1.0.0 | 2023
            </div> 
     </div>
