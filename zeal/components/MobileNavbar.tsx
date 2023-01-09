@@ -26,7 +26,7 @@ if (typeof window !== "undefined") {
 
   return (
     <>
-    <div className='flex items-center justify-between mx-4 pt-4'>
+    <div className='flex w-screen items-center justify-between  fixed z-50 bg-[var(--bg-nav)] px-4 py-4'>
        {/**logo */}
     
         <div>
@@ -49,7 +49,7 @@ if (typeof window !== "undefined") {
     
     {/**seach bar */}
 
-     <div className='mt-12 ml-6'>
+     <div className='mt-20 ml-6'>
         <h1 className='text-3xl font-extrabold'>Overview</h1>
      </div>
 
