@@ -82,7 +82,7 @@ const MobileMenu = () => {
 
  
          <div className='flex justify-center'>
-         <div className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[60vw] shadow-2xl flex h-[16vh] md:shadow-lg rounded-lg'>
+         <div className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[60vw] shadow-xl flex h-[16vh] md:shadow-lg rounded-lg'>
           <Image width={500} height={500} alt='event' src={'/event.jpg'} className=' h-[16vh] w-20 rounded-l-lg object-cover' />
              <div className='bg-white w-full h-full shadow-xl rounded-lg'>
                 <div className='flex items-center justify-between pt-3'>
