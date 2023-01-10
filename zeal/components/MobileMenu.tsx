@@ -45,7 +45,7 @@ const MobileMenu = () => {
     <>
     <div className='fixed bg-[var(--bg-wrapper)] z-40 w-full h-screen top-0 ' onClick={()=> setOpenMenu(false)}/> 
 
-    
+     
         <motion.div 
         variants={sectionVariant}
        initial="hidden"
@@ -81,23 +81,22 @@ const MobileMenu = () => {
          </div>
 
  
-         <div className=' w-full h-40  shadow-2xl'>
-          <Image width={500} height={500} alt='event' src={'/event.jpg'} className='absolute z-[-1] h-40' />
-             <div className='bg-[var(--bg-event)] w-full h-full '>
-                <div className='flex items-center justify-between mx-3 pt-3'>
-                    <h1 className='text-white font-semibold pl-2'>18/01/2023</h1>
-                    <div>
-                    <img src={eventUser.image} alt="event user" className='h-10 w-10 object-cover rounded-full'/>
-                     <p className='text-xs text-white'>Alex H</p>
-                    </div>
+         <div className='flex justify-center'>
+         <div className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[60vw] shadow-2xl flex h-[16vh] md:shadow-lg rounded-lg'>
+          <Image width={500} height={500} alt='event' src={'/event.jpg'} className=' h-[16vh] w-20 rounded-l-lg object-cover' />
+             <div className='bg-white w-full h-full shadow-xl rounded-lg'>
+                <div className='flex items-center justify-between pt-3'>
+                    <h1 className='text-black md:text-sm font-semibold pl-2'>18/01/2023</h1>
+                   
                 </div>
                <div className='flex items-center'>
-               <GoClock className='ml-5 mt-1 h-3 text-gray-200'/>
-               <p className='text-gray-200 mt-1'>17:00</p>
+               <GoClock className='ml-3 mt-1 h-2 text-gray-900'/>
+               <p className='text-gray-900 mt-1 md:text-[10px]'>17:00</p>
                </div>
 
-               <h1 className='text-white mt-5 mb-4 ml-5 font-bold text-lg'>Business Lecture</h1>
+               <h1 className='text-black mt-5 md:mt-2 mb-4 ml-3 font-bold text-base md:text-xs'>Business Lecture</h1>
              </div>
+         </div>
          </div>
        
         
