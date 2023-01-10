@@ -18,7 +18,7 @@ const Events = () => {
          {/**event 1 */}
 
  
-      <div className='flex'>
+      <div className='flex mr-4'>
          <div className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[18vw] flex h-[16vh] shadow-2xl md:shadow-lg rounded-lg'>
           <Image width={500} height={500} alt='event' src={'/event.jpg'} className=' h-[16vh] w-20 rounded-l-lg object-cover' />
              <div className='bg-white w-full h-full rounded-lg'>
@@ -31,7 +31,7 @@ const Events = () => {
                <p className='text-gray-900 mt-1 md:text-[10px]'>17:00</p>
                </div>
 
-               <h1 className='text-black mt-5 md:mt-2 mb-4 md:ml-3 font-bold text-lg md:text-sm'>Business Lecture</h1>
+               <h1 className='text-black mt-5 md:mt-2 mb-4 md:ml-3 font-bold text-lg md:text-xs'>Business Lecture</h1>
              </div>
          </div>
 
@@ -50,7 +50,7 @@ const Events = () => {
                <p className='text-gray-900 mt-1 md:text-[10px]'>21:30</p>
                </div>
 
-               <h1 className='text-black mt-5 md:mt-2 mb-4 md:ml-3 font-bold text-lg md:text-sm'>UI/UX Workshop</h1>
+               <h1 className='text-black mt-5 md:mt-2 w-10 mb-4 md:ml-2 font-bold text-lg md:text-xs'>UI/UX Workshop</h1>
              </div>
          </div>
 
@@ -65,11 +65,11 @@ const Events = () => {
                    
                 </div>
                <div className='flex items-center'>
-               <GoClock className='ml-3 mt-1 h-3 text-gray-900'/>
+               <GoClock className='ml-3 mt-1 h-2 text-gray-900'/>
                <p className='text-gray-900 mt-1 md:text-[10px]'>09:00</p>
                </div>
 
-               <h1 className='text-black mt-5 mb-4 md:ml-3 font-bold text-lg md:text-sm'>Python course</h1>
+               <h1 className='text-black mt-5 mb-4 md:ml-2 font-bold text-lg md:text-xs'>Python course</h1>
              </div>
          </div>
          </div>

@@ -5,7 +5,7 @@ const Chart = () => {
     <div className='mx-6 md:mx-5 mt-10 md:mt-6 mb-10 md:mb-1'>
        <h1 className='text-xl md:text-sm md:font-normal font-extrabold flex justify-end'>More</h1>
 
-      <div className='bg-white md:h-[20vh] md:w-[24.5vw] h-[30vh] px-4 flex flex-col  shadow-2xl md:mt-2 md:shadow-lg rounded-lg hover:scale-105 duration-200 cursor-pointer'>
+      <div className='bg-white md:h-[20vh] md:w-[23vw] h-[30vh] px-4 flex flex-col  shadow-2xl md:mt-2 md:shadow-lg rounded-lg hover:scale-105 duration-200 cursor-pointer'>
 
          {/**chart 1 */}
          

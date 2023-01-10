@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaTwitter, FaYoutube, FaInstagramSquare} from 'react-
 
 const Footer = () => {
   return (
-    <div className='bg-black'>
+    <footer className='bg-black'>
       <div className='flex justify-around pb-4'>
         
         {/**logo with text */}
@@ -31,7 +31,7 @@ const Footer = () => {
 
         {/**courses */}
 
-        <div className='text-white mt-5 ml-4'>
+        <div className='text-white mt-5 pl-4'>
 
            <h4 className='text-sm my-2'>Courses</h4>  
 
@@ -61,7 +61,7 @@ const Footer = () => {
       <hr />
 
       <div className='flex justify-center py-5'>
-          <ul className='flex space-x-4 mx-4'>
+          <ul className='flex space-x-4 px-4'>
             <li className='text-gray-400 text-xs'>Q/A</li>
             <li className='text-gray-400 text-xs'>Terms & conditions</li>
             <li className='text-gray-400 text-xs'>Privacy</li>
@@ -74,7 +74,7 @@ const Footer = () => {
            <p className='text-gray-300 text-sm'>&copy;Zeal  | 2023</p>
       </div> 
 
-    </div>
+    </footer>
   )
 }
 

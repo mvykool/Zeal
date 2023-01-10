@@ -28,7 +28,7 @@ const Desktopmenu = () => {
         
         <div className='flex items-center space-x-1 mx-4 mt-8'>
           <h1 className='rounded-lg bg-black text-white w-8 py-1 flex justify-center'>Z</h1>
-          <p className='text-lg'>eal</p>
+          <p className='text-lg'>EAL</p>
         </div>
 
       {/**menu */}

@@ -22,35 +22,37 @@ const Login = () => {
 
   return (
     <>
-    <div className='w-screen pb-[95vh] '>
+    <div className='w-screen pb-[95vh] bg-app  '>
 
     {/** bgs for desktop and mobile */}
-    <Image src={'/blob-scene-haikei.svg'} width={1000} height={1000} alt='bg' className='w-screen h-screen object-cover hidden md:block' />   
+   
 
-    <Image src={'/bg-mobile.svg'} priority width={900} height={500} alt='bg' className=' w-screen h-[95vh] object-cover absolute z-10 md:hidden' />   
 
-       <main className='flex justify-center py-20 absolute z-30 w-screen'>
+       <main className='flex justify-center py-20  absolute z-30 w-screen'>
          {/**title & images */}
 
-       <div className='bg-white shadow-2xl mt-16 py-20 px-16 rounded-lg'>
+       <div className='bg-app-glass shadow-2xl mt-16 py-20 px-16 rounded-lg'>
     
-      <div className='flex justify-center '>
-      <h1 className='text-6xl font-semibold text-black'>Zeal</h1>
-      </div>
+      
+       <div className='flex items-center justify-center space-x-1 mx-4 mt-8'>
+          <h1 className='rounded-lg bg-black text-5xl text-white w-10 md:px-5 py-1 flex justify-center'>Z</h1>
+          <p className='text-2xl'>EAL</p>
+        </div>
 
+      
          {/**text */}
-         <div className='mt-28 flex justify-center'>
+         <div className='mt-20 flex justify-center'>
           
-            <button onClick={handleLogin} type='button' className='text-white bg-gray-600 p-3 rounded-lg font-bold'>
+            <button onClick={handleLogin} type='button' className='text-white bg-gray-900 p-3 rounded-lg font-bold hover:scale-105 duration-200 cursor-pointer'>
                 Login as Demo
             </button>
             
          </div>
       
-         <div className='mt-5 text-gray-300'>
+         <div className='mt-5 text-gray-500'>
            &copy;Zeal v1.0.0 | 2023
            </div> 
-    </div>
+         </div>
        </main>
     </div>
     </>

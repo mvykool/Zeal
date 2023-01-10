@@ -83,7 +83,7 @@ export default function Home() {
         
         {/**dashboard desktop */}
 
-       <section className='grid grid-cols-6 h-[95vh] w-[98vw] bg-app-glass p-5'>
+       <section className='grid grid-cols-6 h-[95vh] w-[97vw] bg-app-glass p-5'>
         {/**deskotp menu */}
 
         <div className='hidden md:block col-span-1'>
@@ -91,8 +91,8 @@ export default function Home() {
         </div>
  
         {/**white bg */}
-        <div className=' bg-gray-100 col-span-5 rounded-xl'>
-            <div className='grid grid-cols-6'>
+        <div className=' bg-gray-100 col-span-5 shadow-md rounded-xl'>
+            <div className='grid grid-cols-6 h-full'>
             <div className='hidden md:block col-span-4'>
             <Header/>
             <Dashboard/>
