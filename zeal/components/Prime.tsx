@@ -1,9 +1,26 @@
 import React from 'react'
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
+import { motion} from 'framer-motion'
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
 
 const Prime = () => {
   return (
-    <div className='flex justify-center mx-6'>
+    <motion.div 
+    variants={sectionVariant}
+   initial="hidden"
+   whileInView="show"
+   viewport={{ once: true }} 
+    
+    className='flex justify-center mx-6'>
 
       <div className='h-[25vh] md:h-[20vh] md:mx-2 w-full premium md:my-3 my-10 rounded-lg shadow-2xl flex justify-around px-4 relative overflow-hidden hover:scale-105 duration-200  cur'>
 
@@ -30,7 +47,7 @@ const Prime = () => {
 
       </div>
         
-    </div>
+    </motion.div>
   )
 }
 

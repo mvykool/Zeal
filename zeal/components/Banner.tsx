@@ -1,10 +1,27 @@
 import React from 'react'
 import Image from 'next/image'
+import { motion} from 'framer-motion'
 
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
+
+ 
 const Banner = () => {
   return (
     <>
-     <div className='flex justify-center mx-6 md:mx-4 relative banner my-5 pr-3 rounded-lg shadow-2xl hover:scale-105 duration-200 cursor-pointer'>
+     <motion.div 
+        variants={sectionVariant}
+       initial="hidden"
+       whileInView="show"
+       viewport={{ once: true }}
+     className='flex justify-center mx-6 md:mx-4 relative banner my-5 pr-3 rounded-lg shadow-2xl hover:scale-105 duration-200 cursor-pointer'>
         {/**text and img */}
 
         <div className='flex justify-between items-center md:h-[15vh]'>
@@ -22,7 +39,7 @@ const Banner = () => {
           <p className='text-gray-300 text-sm '>Studying has not been easier! </p>
           </div>
         </div>
-     </div>
+     </motion.div>
     </>
   )
 }

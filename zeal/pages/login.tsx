@@ -2,6 +2,18 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import { useStateContext } from '../context/StateContext'
 import Image from 'next/image'
+import { motion} from 'framer-motion'
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
+
 
 const Login = () => {
 
@@ -13,7 +25,7 @@ const Login = () => {
     const handleLogin = () => {
         setUser(true)
     }
-
+ 
 
    
   const router = useRouter()
@@ -24,14 +36,15 @@ const Login = () => {
     <>
     <div className='w-screen pb-[95vh] bg-app  '>
 
-    {/** bgs for desktop and mobile */}
-   
-
-
        <main className='flex justify-center py-20  absolute z-30 w-screen'>
          {/**title & images */}
 
-       <div className='bg-app-glass shadow-2xl mt-16 py-20 px-16 rounded-lg'>
+       <motion.div 
+        variants={sectionVariant}
+       initial="hidden"
+       whileInView="show"
+       viewport={{ once: true }}
+        className='bg-app-glass shadow-2xl mt-16 py-20 px-16 rounded-lg'>
     
       
        <div className='flex items-center justify-center space-x-1 mx-4 mt-8'>
@@ -52,8 +65,9 @@ const Login = () => {
          <div className='mt-5 text-gray-500'>
            &copy;Zeal v1.0.0 | 2023
            </div> 
-         </div>
+         </motion.div>
        </main>
+
     </div>
     </>
   )

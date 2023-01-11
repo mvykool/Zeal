@@ -3,7 +3,7 @@ import BusinessCard from './courseCards/BusinessCard'
 import MathCard from './courseCards/MathCard'
 import ScienceCard from './courseCards/ScienceCard'
 import UxCard from './courseCards/UxCard'
-
+ 
 const CourseMobile = () => {
   return (
    <>

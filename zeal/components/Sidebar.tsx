@@ -6,7 +6,19 @@ import {BiPaint} from 'react-icons/bi'
 import {TbBusinessplan} from 'react-icons/tb'
 import {TbMath} from 'react-icons/tb'
 import Prime from './Prime'
+import { motion} from 'framer-motion'
 
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
+
+ 
 const Sidebar = () => {
   return (
     <div className='bg-white rounded-r-lg h-full shadow-md'>
@@ -48,7 +60,12 @@ const Sidebar = () => {
 
           <div className='ml-10 mt-5'>
 
-            <div className='w-[20vw] h-[10vh] mb-5 ux-card rounded-lg shadow-lg flex items-center hover:scale-105 duration-200 cursor-pointer'>
+            <motion.div 
+            variants={sectionVariant}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+             className='w-[20vw] h-[10vh] mb-5 ux-card rounded-lg shadow-lg flex items-center hover:scale-105 duration-200 cursor-pointer'>
             <BiPaint className='h-9 w-9 text-white bg-[var(--bg-dark)] p-2 rounded-full my-auto ml-5'/>
                 <div className='flex space-x-9 ml-8 items-center'>
                      <div>
@@ -57,9 +74,14 @@ const Sidebar = () => {
                      </div>
                     <MdKeyboardArrowRight className='h-7 w-7 '/>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className='w-[20vw] h-[10vh] mb-5 business-card rounded-lg shadow-lg flex justify-between items-center hover:scale-105 duration-200 cursor-pointer'>
+            <motion.div 
+            variants={sectionVariant}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className='w-[20vw] h-[10vh] mb-5 business-card rounded-lg shadow-lg flex justify-between items-center hover:scale-105 duration-200 cursor-pointer'>
             <TbBusinessplan className='h-9 w-9 text-white bg-[var(--bg-dark)] p-2 rounded-full my-auto ml-5'/>
                 <div className='flex mr-12 items-center'>
                      <div>
@@ -68,9 +90,14 @@ const Sidebar = () => {
                      </div>
                 </div>
                 <MdKeyboardArrowRight className='h-7 w-7 '/>
-            </div>
+            </motion.div>
 
-            <div className='w-[20vw] h-[10vh] mb-5 math-card rounded-lg shadow-lg flex justify-between items-center hover:scale-105 duration-200 cursor-pointer'>
+            <motion.div 
+            variants={sectionVariant}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }} 
+            className='w-[20vw] h-[10vh] mb-5 math-card rounded-lg shadow-lg flex justify-between items-center hover:scale-105 duration-200 cursor-pointer'>
             <TbMath className='h-9 w-9 text-white bg-[var(--bg-dark)] p-2 rounded-full my-auto ml-5'/>
                 <div className='flex mr-6 items-center'>
                      <div>
@@ -80,7 +107,7 @@ const Sidebar = () => {
                 </div>
                 <MdKeyboardArrowRight className='h-7 w-7 '/>
 
-            </div>
+            </motion.div>
 
           </div>
           

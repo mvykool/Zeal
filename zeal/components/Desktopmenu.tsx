@@ -5,6 +5,17 @@ import {IoSettingsSharp} from 'react-icons/io5'
 import { MdLogout } from 'react-icons/md';
 import { useStateContext } from '../context/StateContext';
 import { useRouter } from 'next/router';
+import { motion} from 'framer-motion'
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
 
 const Desktopmenu = () => {
 
@@ -23,7 +34,11 @@ const Desktopmenu = () => {
 
 
   return (
-    <div>
+    <motion.div 
+    variants={sectionVariant}
+   initial="hidden"
+   whileInView="show"
+   viewport={{ once: true }}>
       {/**logo */}
         
         <div className='flex items-center space-x-1 mx-4 mt-8'>
@@ -63,7 +78,7 @@ const Desktopmenu = () => {
        </div>
 
       {/**logout */}
-    </div>
+    </motion.div>
   )
 }
 

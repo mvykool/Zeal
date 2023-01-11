@@ -11,6 +11,17 @@ import Sidebar from '../components/Sidebar';
 import Header from '../components/Header'
 import Desktopmenu from '../components/Desktopmenu';
 import Dashboard from '../components/Dashboard'
+import { motion} from 'framer-motion'
+
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
 
 
 export default function Home() {
@@ -40,10 +51,10 @@ export default function Home() {
         <div className='md:hidden'>
           <MobileNavbar/>
         </div>
-
+ 
         {/**banner */}
 
-        <div className='md:hidden'>
+        <div  className='md:hidden'>
           <Banner/>
         </div>
      
@@ -59,7 +70,7 @@ export default function Home() {
 
       <div>
           <CourseMobile/>
-        </div>
+      </div>
       </section>
       
       {/**progress */}

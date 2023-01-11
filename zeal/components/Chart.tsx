@@ -1,11 +1,26 @@
 import React from 'react'
+import { motion} from 'framer-motion'
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
 
 const Chart = () => {
   return (
     <div className='mx-6 md:mx-5 mt-10 md:mt-6 mb-10 md:mb-1'>
        <h1 className='text-xl md:text-sm md:font-normal font-extrabold flex justify-end'>More</h1>
 
-      <div className='bg-white md:h-[20vh] md:w-[23vw] h-[30vh] px-4 flex flex-col  shadow-2xl md:mt-2 md:shadow-lg rounded-lg hover:scale-105 duration-200 cursor-pointer'>
+      <motion.div 
+        variants={sectionVariant}
+       initial="hidden"
+       whileInView="show"
+       viewport={{ once: true }} 
+      className='bg-white md:h-[20vh] md:w-[23vw] h-[30vh] px-4 flex flex-col  shadow-2xl md:mt-2 md:shadow-lg rounded-lg hover:scale-105 duration-200 cursor-pointer'>
 
          {/**chart 1 */}
          
@@ -37,7 +52,7 @@ const Chart = () => {
             <p className='text-sm md:text-xs text-gray-800'>42%</p>
          </div>
 
-      </div>
+      </motion.div>
     </div>
   )
 }

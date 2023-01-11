@@ -2,6 +2,16 @@ import React from 'react'
 import { HiCalendar } from 'react-icons/hi2'
 import Image from 'next/image'
 import { GoClock } from 'react-icons/go';
+import { motion} from 'framer-motion'
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
 
 
 const Events = () => {
@@ -19,7 +29,12 @@ const Events = () => {
 
  
       <div className='flex mr-4'>
-         <div className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[18vw] flex h-[16vh] shadow-2xl md:shadow-lg rounded-lg'>
+         <motion.div 
+        variants={sectionVariant}
+       initial="hidden"
+       whileInView="show"
+       viewport={{ once: true }} 
+         className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[18vw] flex h-[16vh] shadow-2xl md:shadow-lg rounded-lg'>
           <Image width={500} height={500} alt='event' src={'/event.jpg'} className=' h-[16vh] w-20 rounded-l-lg object-cover' />
              <div className='bg-white w-full h-full rounded-lg'>
                 <div className='flex items-center justify-between pt-3'>
@@ -33,12 +48,17 @@ const Events = () => {
 
                <h1 className='text-black mt-5 md:mt-2 mb-4 md:ml-3 font-bold text-lg md:text-xs'>Business Lecture</h1>
              </div>
-         </div>
+         </motion.div>
 
            {/**event 2 */}
 
  
-           <div className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[18vw] flex h-[16vh] shadow-2xl md:shadow-lg rounded-lg'>
+           <motion.div 
+        variants={sectionVariant}
+       initial="hidden"
+       whileInView="show"
+       viewport={{ once: true }}
+             className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[18vw] flex h-[16vh] shadow-2xl md:shadow-lg rounded-lg'>
           <Image width={500} height={500} alt='event' src={'/event-2.jpg'} className=' h-[16vh] w-20 rounded-l-lg object-cover' />
              <div className='bg-white w-full h-full rounded-lg'>
                 <div className='flex items-center justify-between pt-3'>
@@ -52,12 +72,17 @@ const Events = () => {
 
                <h1 className='text-black mt-5 md:mt-2 w-10 mb-4 md:ml-2 font-bold text-lg md:text-xs'>UI/UX Workshop</h1>
              </div>
-         </div>
+         </motion.div>
 
            {/**event 3 */}
 
  
-           <div className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[18vw] flex h-[16vh] shadow-2xl md:shadow-lg rounded-lg'>
+           <motion.div 
+           variants={sectionVariant}
+           initial="hidden"
+           whileInView="show"
+           viewport={{ once: true }} 
+           className='md:ml-5 hover:scale-105 duration-200 cursor-pointer w-[18vw] flex h-[16vh] shadow-2xl md:shadow-lg rounded-lg'>
           <Image width={500} height={500} alt='event' src={'/event-3.jpg'} className=' h-[16vh] w-20 rounded-l-lg object-cover' />
              <div className='bg-white w-full h-full rounded-lg'>
                 <div className='flex items-center justify-between pt-3'>
@@ -71,7 +96,7 @@ const Events = () => {
 
                <h1 className='text-black mt-5 mb-4 md:ml-2 font-bold text-lg md:text-xs'>Python course</h1>
              </div>
-         </div>
+         </motion.div>
          </div>
        
     </>

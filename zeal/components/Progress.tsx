@@ -11,6 +11,17 @@ import {
     Legend,
   } from 'chart.js';
   import { Line } from 'react-chartjs-2';
+  import { motion} from 'framer-motion'
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
 
   ChartJS.register(
     CategoryScale,
@@ -49,13 +60,18 @@ import {
 
 const Progress = () => {
   return (
-    <div className='mx-6 md:mx-5 mt-10 md:mt-5 mb-10 md:mb-1'>
+    <motion.div 
+    variants={sectionVariant}
+   initial="hidden"
+   whileInView="show"
+   viewport={{ once: true }} 
+    className='mx-6 md:mx-5 mt-10 md:mt-5 mb-10 md:mb-1'>
        <h1 className='text-xl md:text-base font-extrabold'>Progress</h1>
 
       <div className='bg-white md:h-[20vh] md:w-[20vw] h-[30vh] px-4 flex items-center shadow-2xl md:mt-2 md:shadow-lg rounded-lg hover:scale-105 duration-200 cursor-pointer'>
       <Line options={options} data={data} />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

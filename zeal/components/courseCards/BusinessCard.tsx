@@ -1,10 +1,28 @@
 import React from 'react'
 import {TbBusinessplan} from 'react-icons/tb'
 import { users } from '../../utils/users'
+import { motion} from 'framer-motion'
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
+
 
 const BusinessCard = () => {
   return (
-    <div className='pb-8 business-card w-full my-5 rounded-lg shadow-xl relative overflow-hidden px-6'>
+    <motion.div 
+    variants={sectionVariant}
+   initial="hidden"
+   whileInView="show"
+   viewport={{ once: true }}
+    
+    className='pb-8 business-card w-full my-5 rounded-lg shadow-xl relative overflow-hidden px-6'>
 
     {/**title and icon*/}
      <div  className='flex item-center justify-between pt-4'>
@@ -61,7 +79,7 @@ const BusinessCard = () => {
 
       </div>
 
-  </div>
+  </motion.div>
   )
 }
 
