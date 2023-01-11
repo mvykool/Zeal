@@ -19,8 +19,7 @@ const Banner = () => {
      <motion.div 
         variants={sectionVariant}
        initial="hidden"
-       whileInView="show"
-       viewport={{ once: true }}
+       animate="show"
      className='flex justify-center mx-6 md:mx-4 relative banner my-5 pr-3 rounded-lg shadow-2xl hover:scale-105 duration-200 cursor-pointer'>
         {/**text and img */}
 
