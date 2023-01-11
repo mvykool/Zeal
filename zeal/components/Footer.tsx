@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaTwitter, FaYoutube, FaInstagramSquare} from 'react-
 
 const Footer = () => {
   return (
-    <footer className='bg-black'>
+    <footer className='bg-black w-screen'>
       <div className='flex justify-around pb-4'>
         
         {/**logo with text */}
@@ -71,7 +71,7 @@ const Footer = () => {
         
     
       <div className='py-1  flex justify-center'>
-           <p className='text-gray-300 text-sm'>&copy;Zeal  | 2023</p>
+           <p className='text-gray-300 text-xs'>&copy;Zeal | 2023</p>
       </div> 
 
     </footer>
