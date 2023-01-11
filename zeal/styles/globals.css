@@ -8,7 +8,7 @@
     --bg-wrapper: rgba(0,0,0, 0.7);
     --bg-event: rgba(0, 0, 0, 0.5);
     --bg-nav: rgba(255,255,255,0.9);
-    --bg-loader: rgba(255, 255, 255, 0.9);
+    --bg-loader: rgba(255, 255, 255, 0.7);
 }
 
 html,body, footer{
