@@ -29,7 +29,6 @@
   ::-webkit-scrollbar-thumb {
     background: var(--bg-dark); 
     border-radius: 10px;
-    border: 1px white solid;
   }
   
   /* Handle on hover */
